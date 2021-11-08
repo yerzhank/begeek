@@ -6,4 +6,6 @@ fn main() {
        println!("ok");
    }
 
+   let a = 10;
+
 }
