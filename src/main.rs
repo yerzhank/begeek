@@ -1,6 +1,9 @@
 fn main() {
-   let mut x = 6;
-   x = 10;
-   println!("{}", x)
+   let x = 6;
+   println!("{}", x);
+
+   if x == 6 {
+       println!("ok");
+   }
 
 }
