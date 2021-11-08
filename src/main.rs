@@ -7,7 +7,7 @@ fn main() {
     println!("Ваше случайно число: {}", secret_number); 
 
     let mut guess = String::new();
-    println!("Ввкедите число"); 
+    println!("Введите число"); 
     io::stdin().
         read_line(&mut guess).
         expect("Failed");
