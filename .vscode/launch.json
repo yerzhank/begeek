@@ -1,0 +1,10 @@
+{
+    "configurations": [
+    {
+        "command": "cargo run",
+        "name": "Run cargo run",
+        "request": "launch",
+        "type": "node-terminal"
+    }
+    ]
+}

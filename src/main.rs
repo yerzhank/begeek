@@ -13,4 +13,14 @@ fn main() {
         expect("Failed");
     println!("Введенное Вами число: {}", guess);
 
+    let _i: i32 = 0;
+
+    for _i in 1..10 {
+        println!("{}", _i);
+        if _i == 5 {
+            println!("stop");
+            break
+        }
+    }
+
 }
