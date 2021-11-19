@@ -1,26 +1,20 @@
-use std::io;
-use rand::Rng;
-
 fn main() {
-    
-    let secret_number = rand::thread_rng().gen_range(1..101);
-    println!("Ваше случайно число: {}", secret_number); 
+    let tom = Person {
+        name: "John".to_string(),
+        age: 21,
+        position: "middle".to_string(),
+        email: "john@m.com".to_string()
+    };
+    println!("{}", tom.name);
+    println!("{}", tom.age);
+    println!("{}", tom.position);
+    println!("{}", tom.email);
+}
 
-    let mut guess = String::new();
-    println!("Введите число"); 
-    io::stdin().
-        read_line(&mut guess).
-        expect("Failed");
-    println!("Введенное Вами число: {}", guess);
 
-    let _i: i32 = 0;
-
-    for _i in 1..10 {
-        println!("{}", _i);
-        if _i == 5 {
-            println!("stop");
-            break
-        }
-    }
-
+struct Person {
+    name: String,
+    age: u8,
+    position: String,
+    email: String
 }
